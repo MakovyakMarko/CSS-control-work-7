@@ -1,0 +1,101 @@
+.pseudochecked input:checked {
+  height: 50px;
+  width: 50px;
+}
+.pseudoenabled input:enabled {
+  background: #ffff00;
+}
+.pseudodisabled input:disabled {
+  background-color: #ddd;
+}
+.empty p:empty {
+  width: 100px;
+  height: 20px;
+  background: #ff0000;
+}
+.firstoftype p:first-of-type {
+  background: red;
+}
+.inrange:in-range {
+  border: 2px dotted red;
+}
+.invalid input:invalid {
+  border: 2px solid red;
+}
+.lastchild p:last-child {
+  background: red;
+}
+.lastoftype p:last-of-type {
+  background-color: #ffff00;
+}
+.not div:not(p) {
+  color: red;
+}
+.nthchild div:nth-child(2) {
+  color: #ff0000;
+}
+.nthchild li:nth-child(2) {
+  color: lightgreen;
+}
+.nthchild :nth-child(3) {
+  background: yellow;
+}
+.nthlastchild p:nth-last-child(2) {
+  background: green;
+}
+.nthlastoftype p:nth-last-of-type(2) {
+  background-color: #ffff00;
+}
+.nthoftype div:nth-of-type(2) {
+  background-color: red;
+}
+.nthoftype li:nth-of-type(2) {
+  background-color: blue;
+}
+.nthoftype :nth-of-type(3) {
+  background: green;
+}
+.onlyoftype p:only-of-type {
+  background-color: blue;
+}
+.onlychild p:only-child {
+  background-color: #ffff00;
+}
+.optional input:optional {
+  background-color: #ffff00;
+}
+.outofrange input:out-of-range {
+  border: 2px solid red;
+}
+.readonly input:read-only {
+  background-color: yellow;
+}
+.readwrite input:read-write {
+  background-color: yellow;
+}
+.required input:required {
+  background-color: yellow;
+}
+:root {
+  background: whitesmoke;
+}
+.target :target {
+  border: 2px solid #d4d4d4;
+  background-color: #e5eecc;
+}
+.valid input:valid {
+  background-color: #ffff00;
+}
+.after p::after {
+  content: " - Remember this";
+}
+.before p::before {
+  content: "Read this: ";
+}
+.selection ::selection {
+  color: red;
+  background-color: #ffff00;
+}
+.marker ::marker {
+  color: red;
+}

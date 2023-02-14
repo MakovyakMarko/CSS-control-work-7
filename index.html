@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo classes</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <h2>Pseudo class checked</h2>
+    <div class="pseudochecked">
+      <form action="">
+        <input type="radio" checked="checked" value="male" name="gender" />
+        Male <br />
+        <input type="radio" value="female" name="gender" />
+        Female
+        <br />
+        <input type="checkbox" checked="checked" value="Bike" />
+        I have a bike <br />
+        <input type="checkbox" value="Car" /> I have a car
+        <br />
+      </form>
+    </div>
+    <hr />
+
+    <h2>Pseudo class enabled/disabled</h2>
+    <form action="">
+      <div class="pseudoenabled">
+        First name:
+        <input type="text" value="Mickey" class="pseudoenabled" /><br />
+        Last name:
+        <input type="text" value="Mouse" class="pseudoenabled" /><br />
+      </div>
+      <div class="pseudodisabled">
+        Country:
+        <input
+          type="text"
+          disabled="disabled"
+          class="pseudodisabled"
+          value="Disneyland"
+        />
+      </div>
+    </form>
+
+    <hr />
+
+    <h2>Pseudo class empty</h2>
+    <div class="empty">
+      <p></p>
+      <p>Попередні параграф empty</p>
+      <p></p>
+      <p>Параграф перед цим також пустий</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class first-of-type</h2>
+    <div class="firstoftype">
+      <p>The first paragraph</p>
+      <p>The second paragraph</p>
+      <p>The third paragraph</p>
+      <p>The fourth paragraph</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class in-range</h2>
+    <p>Range from 5 to 10, more or less disable style.</p>
+    <input type="number" min="5" max="10" value="7" class="inrange" />
+    <hr />
+
+    <h2>Pseudo class invalid</h2>
+    <div class="invalid">
+      <input type="email" value="supportEmail" />
+    </div>
+    <p>Try typing legal email address, to see the styling disapear.</p>
+    <hr />
+
+    <h2>Pseudo class last-child</h2>
+    <div class="lastchild">
+      <p>The first paragraph</p>
+      <p>The second paragraph</p>
+      <p>The third paragraph</p>
+      <p>The fourth paragraph</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class last-of-type</h2>
+    <h1>This is a heading</h1>
+    <div class="lastoftype">
+      <p>The first paragraph.</p>
+      <p>The second paragraph.</p>
+      <p>The third paragraph.</p>
+      <p>The fourth paragraph.</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class not()</h2>
+    <div class="not">
+      <h1>Not pseudo class</h1>
+      <p>Lorem, ipsum dolor.</p>
+      <div>Div inside</div>
+      <p>Lorem, ipsum dolor.</p>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class nth-child</h2>
+    <div class="nthchild">
+      <div>
+        <p>This is some text</p>
+      </div>
+      <div>
+        <p>This is some text</p>
+      </div>
+      <div>
+        <p>This is some text</p>
+      </div>
+      <ul>
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+        <li>Fourth list item</li>
+        <li>Fifth list item</li>
+      </ul>
+    </div>
+    <hr />
+
+    <h2>Pseudo class nth-last-child</h2>
+    <div class="nthlastchild">
+      <p>The first paragraph</p>
+      <p>The second paragraph</p>
+      <p>The third paragraph</p>
+      <p>The fourth paragraph</p>
+      <p>The fifth paragraph</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class nth-last-of-type</h2>
+    <div class="nthlastoftype">
+      <p>The first paragraph</p>
+      <p>The second paragraph</p>
+      <p>The third paragraph</p>
+      <p>The fourth paragraph</p>
+      <p>The fifth paragraph</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class nth-of-type</h2>
+    <div class="nthoftype">
+      <div>
+        <p>This is some text</p>
+      </div>
+      <div>
+        <p>This is some text</p>
+      </div>
+      <div>
+        <p>This is some text</p>
+      </div>
+      <ul>
+        <li>First list item</li>
+        <li>Second list item</li>
+        <li>Third list item</li>
+        <li>Fourth list item</li>
+        <li>Fifth list item</li>
+      </ul>
+    </div>
+    <hr />
+
+    <h2>Pseudo class only-of-type</h2>
+    <div class="onlyoftype">
+      <div>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+      <div>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </div>
+    <hr />
+
+    <h2>Pseudo class only-child</h2>
+    <div class="onlychild">
+      <div>
+        <p>Only child paragraph</p>
+      </div>
+      <div>
+        <span>This is span</span>
+        <p>This is paragraph</p>
+      </div>
+    </div>
+    <hr />
+
+    <h2>Pseudo class optional</h2>
+    <div class="optional">
+      <p>An optional input element:</p>
+      <input type="text" /><br />
+      <p>A required input element:</p>
+      <input type="text" required /> <br />
+      <p>
+        The :optional selector selects form elements with no "required"
+        attribute.
+      </p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class out-of-range</h2>
+    <div class="outofrange">
+      <p>Renge from 5 to 10</p>
+      <input type="number" min="5" max="10" value="12" /><br />
+      <p>
+        Try typing a number within the given range (between 5 and 10), to see
+        the styling disappear.
+      </p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class read-only</h2>
+    <div class="readonly">
+      <p>Read only input element</p>
+      <input type="text" value="hello" readonly />
+      <p>A normal input element:</p>
+      <input type="text" /> <br />
+    </div>
+    <hr />
+
+    <h2>Pseudo element read-write</h2>
+    <div class="readwrite">
+      <p>A normal input element</p>
+      <input type="text" /><br />
+      <p>A readonly input element</p>
+      <input type="text" value="readonly" readonly /> <br />
+      <p>
+        The :read-write selector selects form elements with no "readonly"
+        attribute
+      </p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class required</h2>
+    <div class="required">
+      <p>An optional input element:</p>
+      <input type="text" /> <br />
+      <p>A required input element</p>
+      <input type="text" required /><br />
+      <p>
+        The :required selector selects form elements with a "required"
+        attribute.
+      </p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class root</h2>
+    <div class="root">
+      <div>
+        <p>Set the whitesmoke background color for the HTML document :</p>
+      </div>
+    </div>
+    <hr />
+
+    <h2>Pseudo class target</h2>
+    <div class="target">
+      <p><a href="#news1">Jump to new content 1</a></p>
+      <p><a href="#news2">Jump to new content 2</a></p>
+      <p>
+        Click on the links above and the :target selector highlight the current
+        active HTML anchor.
+      </p>
+      <p id="news1">New content 1...</p>
+      <p id="news2">New content 2...</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo class valid</h2>
+    <div class="valid">
+      <input type="email" value="support@gmail.com" /> <br />
+      <p>Try typing an illegal e-mail address, to see the styling disappear.</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo element after</h2>
+    <div class="after">
+      <p>My name is James</p>
+      <p>James Bond</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo element before</h2>
+    <div class="before">
+      <p>My name is James</p>
+      <p>James Bond</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo element selection</h2>
+    <div class="selection">
+      <h3>Selection pseudo element</h3>
+      <p>Try to select some text in this div</p>
+    </div>
+    <hr />
+
+    <h2>Pseudo element marker</h2>
+    <div class="marker">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+      <ol>
+        <li>A</li>
+        <li>B</li>
+      </ol>
+    </div>
+  </body>
+</html>
